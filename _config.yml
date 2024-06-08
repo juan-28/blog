@@ -42,9 +42,6 @@ plugins:
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
-
-  - Gemfile
-  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/

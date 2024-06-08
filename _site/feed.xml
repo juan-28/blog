@@ -1,4 +1,478 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-06-08T00:29:10-04:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Pranav’s Data Hub</title><subtitle>Aspiring Data Professional and Lifelong Learner :)</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2024/06/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-06-08T00:12:54-04:00</published><updated>2024-06-08T00:12:54-04:00</updated><id>http://localhost:4000/blog/jekyll/update/2024/06/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2024/06/08/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-06-08T02:01:44-04:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Pranav’s Data Hub</title><subtitle>Aspiring Data Professional and Lifelong Learner :)</subtitle><entry><title type="html">Cloud Computing</title><link href="http://localhost:4000/blog/jekyll/update/2024/06/08/cloud-computing.html" rel="alternate" type="text/html" title="Cloud Computing" /><published>2024-06-08T01:56:25-04:00</published><updated>2024-06-08T01:56:25-04:00</updated><id>http://localhost:4000/blog/jekyll/update/2024/06/08/cloud-computing</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2024/06/08/cloud-computing.html"><![CDATA[<ul>
+  <li><a href="#cloud-computing">Cloud Computing</a>
+    <ul>
+      <li><a href="#what-is-cloud-computing">What is Cloud Computing?</a>
+        <ul>
+          <li><a href="#the-deployment-models-of-the-cloud">The Deployment Models of the Cloud</a></li>
+          <li><a href="#the-five-characteristics-of-cloud-computing">The Five Characteristics of Cloud Computing</a></li>
+          <li><a href="#six-advantages-of-cloud-computing">Six Advantages of Cloud Computing</a></li>
+          <li><a href="#problems-solved-by-the-cloud">Problems solved by the Cloud</a></li>
+          <li><a href="#types-of-cloud-computing">Types of Cloud Computing</a></li>
+          <li><a href="#example-of-cloud-computing-types">Example of Cloud Computing Types</a></li>
+          <li><a href="#pricing-of-the-cloud--quick-overview">Pricing of the Cloud – Quick Overview</a></li>
+          <li><a href="#aws-cloud-use-cases">AWS Cloud Use Cases</a></li>
+        </ul>
+      </li>
+      <li><a href="#aws-global-infrastructure">AWS Global Infrastructure</a>
+        <ul>
+          <li><a href="#aws-regions">AWS Regions</a></li>
+          <li><a href="#how-to-choose-an-aws-region">How to choose an AWS Region?</a></li>
+          <li><a href="#aws-availability-zones">AWS Availability Zones</a></li>
+          <li><a href="#aws-points-of-presence-edge-locations">AWS Points of Presence (Edge Locations)</a></li>
+        </ul>
+      </li>
+      <li><a href="#tour-of-the-aws-console">Tour of the AWS Console</a></li>
+      <li><a href="#shared-responsibility-model">Shared Responsibility Model</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="what-is-cloud-computing">What is Cloud Computing?</h2>
+
+<ul>
+  <li>Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources</li>
+  <li>Through a cloud services platform with pay-as-you-go pricing</li>
+  <li>You can provision exactly the right type and size of computing resources you need</li>
+  <li>You can access as many resources as you need, almost instantly</li>
+  <li>Simple way to access servers, storage, databases and a set of application services</li>
+  <li>Amazon Web Services owns and maintains the network-connected hardware required for these application services, while you provision and use what you need via a web application.</li>
+</ul>
+
+<h3 id="the-deployment-models-of-the-cloud">The Deployment Models of the Cloud</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Private Cloud:</strong></th>
+      <th><strong>Public Cloud:</strong></th>
+      <th><strong>Hybrid Cloud:</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cloud services used by a single organization, not exposed to the public.</td>
+      <td>Cloud resources owned and operated by a thirdparty cloud service provider delivered over the Internet.</td>
+      <td>Keep some servers on premises and extend some capabilities to the Cloud</td>
+    </tr>
+    <tr>
+      <td>Complete control</td>
+      <td>Six Advantages of Cloud Computing</td>
+      <td>Control over sensitive assets in your private infrastructure</td>
+    </tr>
+    <tr>
+      <td>Security for sensitive applications</td>
+      <td> </td>
+      <td>Flexibility and costeffectiveness of the public cloud</td>
+    </tr>
+    <tr>
+      <td>Meet specific business needs</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="the-five-characteristics-of-cloud-computing">The Five Characteristics of Cloud Computing</h3>
+
+<ul>
+  <li><strong>On-demand self service:</strong>
+    <ul>
+      <li>Users can provision resources and use them without human interaction from the service provider</li>
+    </ul>
+  </li>
+  <li><strong>Broad network access:</strong>
+    <ul>
+      <li>Resources available over the network, and can be accessed by diverse client platforms</li>
+    </ul>
+  </li>
+  <li><strong>Multi-tenancy and resource pooling:</strong>
+    <ul>
+      <li>Multiple customers can share the same infrastructure and applications with security and privacy</li>
+      <li>Multiple customers are serviced from the same physical resources</li>
+    </ul>
+  </li>
+  <li><strong>Rapid elasticity and scalability:</strong>
+    <ul>
+      <li>Automatically and quickly acquire and dispose resources when needed</li>
+      <li>Quickly and easily scale based on demand</li>
+    </ul>
+  </li>
+  <li><strong>Measured service:</strong>
+    <ul>
+      <li>Usage is measured, users pay correctly for what they have used</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="six-advantages-of-cloud-computing">Six Advantages of Cloud Computing</h3>
+
+<ul>
+  <li><strong>Trade capital expense (CAPEX) for operational expense (OPEX)</strong>
+    <ul>
+      <li>Pay On-Demand: don’t own hardware</li>
+      <li>Reduced Total Cost of Ownership (TCO) &amp; Operational Expense (OPEX)</li>
+    </ul>
+  </li>
+  <li><strong>Benefit from massive economies of scale</strong>
+    <ul>
+      <li>Prices are reduced as AWS is more efficient due to large scale</li>
+    </ul>
+  </li>
+  <li><strong>Stop guessing capacity</strong>
+    <ul>
+      <li>Scale based on actual measured usage</li>
+    </ul>
+  </li>
+  <li><strong>Increase speed and agility</strong></li>
+  <li><strong>Stop spending money running and maintaining data centers</strong></li>
+  <li><strong>Go global in minutes:</strong> leverage the AWS global infrastructure</li>
+</ul>
+
+<h3 id="problems-solved-by-the-cloud">Problems solved by the Cloud</h3>
+
+<ul>
+  <li><strong>Flexibility:</strong> change resource types when needed</li>
+  <li><strong>Cost-Effectiveness:</strong> pay as you go, for what you use</li>
+  <li><strong>Scalability:</strong> accommodate larger loads by making hardware stronger or adding additional nodes</li>
+  <li><strong>Elasticity:</strong> ability to scale out and scale-in when needed</li>
+  <li><strong>High-availability and fault-tolerance:</strong> build across data centers</li>
+  <li><strong>Agility:</strong> rapidly develop, test and launch software applications</li>
+</ul>
+
+<h3 id="types-of-cloud-computing">Types of Cloud Computing</h3>
+
+<ul>
+  <li><strong>Infrastructure as a Service (IaaS)</strong>
+    <ul>
+      <li>Provide building blocks for cloud IT</li>
+      <li>Provides networking, computers, data storage space</li>
+      <li>Highest level of flexibility</li>
+      <li>Easy parallel with traditional on-premises IT</li>
+    </ul>
+  </li>
+  <li><strong>Platform as a Service (PaaS)</strong>
+    <ul>
+      <li>Removes the need for your organization to manage the underlying infrastructure</li>
+      <li>Focus on the deployment and management of your applications</li>
+    </ul>
+  </li>
+  <li><strong>Software as a Service (SaaS)</strong>
+    <ul>
+      <li>Completed product that is run and managed by the service provider</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../images/cloud_models.jpg" alt="Cloud Models" /></p>
+
+<h3 id="example-of-cloud-computing-types">Example of Cloud Computing Types</h3>
+
+<ul>
+  <li><strong>Infrastructure as a Service:</strong>
+    <ul>
+      <li>Amazon EC2 (on AWS)</li>
+      <li>GCP, Azure, Rackspace, Digital Ocean, Linode</li>
+    </ul>
+  </li>
+  <li>Platform as a Service:
+    <ul>
+      <li>Elastic Beanstalk (on AWS)</li>
+      <li>Heroku, Google App Engine (GCP), Windows Azure (Microsoft)</li>
+    </ul>
+  </li>
+  <li>Software as a Service:
+    <ul>
+      <li>Many AWS services (ex: Rekognition for Machine Learning)</li>
+      <li>Google Apps (Gmail), Dropbox, Zoom</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="pricing-of-the-cloud--quick-overview">Pricing of the Cloud – Quick Overview</h3>
+
+<ul>
+  <li>AWS has 3 pricing fundamentals, following the pay-as-you-go pricing model</li>
+  <li><strong>Compute:</strong>
+    <ul>
+      <li>Pay for compute time</li>
+    </ul>
+  </li>
+  <li><strong>Storage:</strong>
+    <ul>
+      <li>Pay for data stored in the Cloud</li>
+    </ul>
+  </li>
+  <li><strong>Data transfer OUT of the Cloud:</strong>
+    <ul>
+      <li>Data transfer IN is free</li>
+    </ul>
+  </li>
+  <li>Solves the expensive issue of traditional IT</li>
+</ul>
+
+<h3 id="aws-cloud-use-cases">AWS Cloud Use Cases</h3>
+
+<ul>
+  <li>AWS enables you to build sophisticated, scalable applications</li>
+  <li>Applicable to a diverse set of industries</li>
+  <li>Use cases include
+    <ul>
+      <li>Enterprise IT, Backup &amp; Storage, Big Data analytics</li>
+      <li>Website hosting, Mobile &amp; Social Apps</li>
+      <li>Gaming</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="aws-global-infrastructure">AWS Global Infrastructure</h2>
+
+<ul>
+  <li>AWS Regions</li>
+  <li>AWS Availability Zones</li>
+  <li>AWS Data Centers</li>
+  <li>AWS Edge Locations / Points of Presence</li>
+  <li><a href="https://infrastructure.aws/">https://infrastructure.aws/</a></li>
+</ul>
+
+<h3 id="aws-regions">AWS Regions</h3>
+
+<ul>
+  <li>AWS has Regions all around the world</li>
+  <li>Names can be us-east-1, eu-west-3…</li>
+  <li>A region is a <strong>cluster of data centers</strong></li>
+  <li><strong>Most AWS services are region-scoped</strong></li>
+</ul>
+
+<h3 id="how-to-choose-an-aws-region">How to choose an AWS Region?</h3>
+
+<p>If you need to launch a new application, where should you do it?</p>
+
+<ul>
+  <li><strong>Compliance with data governance and legal requirements:</strong> data never leaves a region without your explicit permission</li>
+  <li><strong>Proximity to customers:</strong> reduced latency</li>
+  <li><strong>Available services within a Region:</strong> new services and new features aren’t available in every Region</li>
+  <li><strong>Pricing:</strong> pricing varies region to region and is transparent in the service pricing page</li>
+</ul>
+
+<h3 id="aws-availability-zones">AWS Availability Zones</h3>
+
+<ul>
+  <li>Each region has many availability zones (usually 3, min is 2, max is 6). Example:
+    <ul>
+      <li>ap-southeast-2a</li>
+      <li>ap-southeast-2b</li>
+      <li>ap-southeast-2c</li>
+    </ul>
+  </li>
+  <li>Each availability zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity</li>
+  <li>They’re separate from each other, so that they’re isolated from disasters</li>
+  <li>They’re connected with high bandwidth, ultra-low latency networking</li>
+</ul>
+
+<h3 id="aws-points-of-presence-edge-locations">AWS Points of Presence (Edge Locations)</h3>
+
+<ul>
+  <li>Amazon has 216 Points of Presence (205 Edge Locations &amp; 11 Regional Caches) in 84 cities across 42 countries</li>
+  <li>Content is delivered to end users with lower latency</li>
+</ul>
+
+<h2 id="tour-of-the-aws-console">Tour of the AWS Console</h2>
+
+<ul>
+  <li><strong>AWS has Global Services:</strong>
+    <ul>
+      <li>Identity and Access Management (IAM)</li>
+      <li>Route 53 (DNS service)</li>
+      <li>CloudFront (Content Delivery Network)</li>
+      <li>WAF (Web Application Firewall)</li>
+    </ul>
+  </li>
+  <li><strong>Most AWS services are Region-scoped:</strong>
+    <ul>
+      <li>Amazon EC2 (Infrastructure as a Service)</li>
+      <li>Elastic Beanstalk (Platform as a Service)</li>
+      <li>Lambda (Function as a Service)</li>
+      <li>Rekognition (Software as a Service)</li>
+    </ul>
+  </li>
+  <li><strong>Region Table:</strong> <a href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services">https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services</a></li>
+</ul>
+
+<h2 id="shared-responsibility-model">Shared Responsibility Model</h2>
+
+<ul>
+  <li>CUSTOMER = RESPONSIBILITY FOR THE SECURITY <strong>IN</strong> THE CLOUD</li>
+  <li>AWS = RESPONSIBILITY FOR THE SECURITY <strong>OF</strong> THE CLOUD</li>
+</ul>
+
+<p><img src="../images/Shared_Responsibility_Model.jpg" alt="Shared Responsibility Model" /></p>
+
+<hr />]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cloud Computing What is Cloud Computing? The Deployment Models of the Cloud The Five Characteristics of Cloud Computing Six Advantages of Cloud Computing Problems solved by the Cloud Types of Cloud Computing Example of Cloud Computing Types Pricing of the Cloud – Quick Overview AWS Cloud Use Cases AWS Global Infrastructure AWS Regions How to choose an AWS Region? AWS Availability Zones AWS Points of Presence (Edge Locations) Tour of the AWS Console Shared Responsibility Model]]></summary></entry><entry><title type="html">Setting up jekyll blog</title><link href="http://localhost:4000/blog/jekyll/update/2024/06/08/setting-up-jekyll-blog.html" rel="alternate" type="text/html" title="Setting up jekyll blog" /><published>2024-06-08T01:53:53-04:00</published><updated>2024-06-08T01:53:53-04:00</updated><id>http://localhost:4000/blog/jekyll/update/2024/06/08/setting-up-jekyll-blog</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2024/06/08/setting-up-jekyll-blog.html"><![CDATA[<p>Guide to create a blog using GitHub Pages and Jekyll:</p>
+
+<h3 id="step-by-step-guide-to-create-a-blog-using-github-pages-and-jekyll">Step-by-Step Guide to Create a Blog Using GitHub Pages and Jekyll</h3>
+
+<h4 id="1-set-up-a-github-repository">1. <strong>Set Up a GitHub Repository</strong></h4>
+
+<ol>
+  <li>Go to <a href="https://github.com">GitHub</a> and log in to your account.</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> icon in the top-right corner and select <code class="language-plaintext highlighter-rouge">New repository</code>.</li>
+  <li>Name your repository, for example, <code class="language-plaintext highlighter-rouge">username.github.io</code>, where <code class="language-plaintext highlighter-rouge">username</code> is your GitHub username.</li>
+  <li>Set the repository to public and check the box to initialize it with a <code class="language-plaintext highlighter-rouge">README.md</code> file.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Create repository</code>.</li>
+</ol>
+
+<h4 id="2-install-jekyll">2. <strong>Install Jekyll</strong></h4>
+
+<ol>
+  <li><strong>Install Ruby:</strong>
+    <ul>
+      <li>Follow the instructions on <a href="https://www.ruby-lang.org/en/documentation/installation/">ruby-lang.org</a> to install Ruby on your system.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Install Jekyll and Bundler:</strong>
+Open your terminal and run the following commands:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="3-create-a-new-jekyll-site">3. <strong>Create a New Jekyll Site</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Navigate to your workspace:</strong>
+Open your terminal and navigate to the directory where you want to create your blog.</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>path/to/your/workspace
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Create a new Jekyll site:</strong>
+Run the following command to create a new Jekyll site in a directory named <code class="language-plaintext highlighter-rouge">myblog</code>:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new myblog
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Navigate to your new Jekyll site directory:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>myblog
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="4-run-your-jekyll-site-locally">4. <strong>Run Your Jekyll Site Locally</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Install dependencies:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Serve your site locally:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Open your browser:</strong>
+Open your browser and go to <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> to see your site.</p>
+  </li>
+</ol>
+
+<h4 id="5-configure-your-jekyll-site">5. <strong>Configure Your Jekyll Site</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Open <code class="language-plaintext highlighter-rouge">_config.yml</code>:</strong>
+Edit the <code class="language-plaintext highlighter-rouge">_config.yml</code> file to customize your site’s settings.</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">My Blog</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">A blog about something awesome</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://username.github.io"</span> <span class="c1"># the base hostname &amp; protocol for your site</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Update <code class="language-plaintext highlighter-rouge">_config.yml</code> with your repository details:</strong>
+Make sure the URL and baseurl are correctly set to point to your GitHub Pages site.</p>
+  </li>
+</ol>
+
+<h4 id="6-add-content-to-your-blog">6. <strong>Add Content to Your Blog</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Create a new post:</strong>
+Add a new Markdown file to the <code class="language-plaintext highlighter-rouge">_posts</code> directory. Name the file using the format <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>.</p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Welcome</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">My</span><span class="nv"> </span><span class="s">Blog"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2024-06-08 12:00:00 -0000</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">jekyll update</span>
+<span class="nn">---</span>
+This is my first blog post!
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Commit your changes:</strong>
+Save the file and commit your changes to your local Git repository.</p>
+  </li>
+</ol>
+
+<h4 id="7-push-your-site-to-github">7. <strong>Push Your Site to GitHub</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Add your GitHub repository as a remote:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/username/username.github.io.git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Push your site to GitHub:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit"</span>
+git push <span class="nt">-u</span> origin master
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="8-configure-github-pages">8. <strong>Configure GitHub Pages</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Go to your GitHub repository:</strong>
+Navigate to the <code class="language-plaintext highlighter-rouge">username.github.io</code> repository on GitHub.</p>
+  </li>
+  <li><strong>Set up GitHub Pages:</strong>
+    <ul>
+      <li>Go to the repository settings.</li>
+      <li>Scroll down to the “GitHub Pages” section.</li>
+      <li>Select the source as <code class="language-plaintext highlighter-rouge">master branch</code> or <code class="language-plaintext highlighter-rouge">main branch</code> (depending on your default branch).</li>
+      <li>Save your changes.</li>
+    </ul>
+  </li>
+  <li><strong>Access your site:</strong>
+Your blog should now be live at <code class="language-plaintext highlighter-rouge">https://username.github.io</code>.</li>
+</ol>
+
+<h3 id="additional-tips">Additional Tips</h3>
+
+<ul>
+  <li><strong>Themes:</strong> You can change the theme of your Jekyll site by modifying the <code class="language-plaintext highlighter-rouge">_config.yml</code> file. You can find available themes at <a href="https://jekyllthemes.io/">Jekyll Themes</a>.</li>
+  <li><strong>Plugins:</strong> Jekyll supports various plugins to extend its functionality. You can add plugins by updating your <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</li>
+</ul>
+
+<p>By following these steps, you should have a basic Jekyll blog hosted on GitHub Pages. You can continue to customize your blog by editing the HTML, CSS, and adding more posts</p>
+
+<p>y following these steps, you should have a basic Jekyll blog hosted on GitHub Pages. You can continue to customize your blog by editing the HTML, CSS, and adding more posts</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Guide to create a blog using GitHub Pages and Jekyll:]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2024/06/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-06-08T00:12:54-04:00</published><updated>2024-06-08T00:12:54-04:00</updated><id>http://localhost:4000/blog/jekyll/update/2024/06/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2024/06/08/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -12,6 +486,7 @@
   <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<span class="c1"># =&gt; prints 'Hi, Tom' to STDOUT</span></code></pre></figure>
 
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
