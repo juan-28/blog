@@ -1,9 +1,9 @@
 ---
-id: 2024-06-08-setting-up-jekyll-blog
-aliases: []
-tags: []
+id: 2024-06-05-setting-up-jekyll-blog
+aliases: 
+tags: 
 categories: jekyll update
-date: '2024-06-08 01:53:53 -0400'
+date: 2024-06-05
 layout: post
 title: Setting up jekyll blog
 ---

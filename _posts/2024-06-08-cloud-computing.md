@@ -1,9 +1,9 @@
 ---
-id: 2024-06-08-cloud-computing
-aliases: []
-tags: []
+id: 2024-06-06-cloud-computing
+aliases: 
+tags: 
 categories: jekyll update
-date: '2024-06-08 01:56:25 -0400'
+date: 2024-06-06
 layout: post
 title: Cloud Computing
 ---
