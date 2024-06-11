@@ -19,6 +19,9 @@ group :jekyll_plugins do
 end
 
 gem 'webrick'
+gem 'faraday-retry'
+gem 'csv'
+
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.

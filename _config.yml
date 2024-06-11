@@ -29,7 +29,7 @@ github_username: juan-28
 # Build settings
 theme: minima
 minima:
-  skin: "dark"
+  skin: dark
 plugins:
   - jekyll-feed
 
