@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://info.pranav-data.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://info.pranav-data.com/blog/" rel="alternate" type="text/html" /><updated>2024-06-11T08:10:52+00:00</updated><id>https://info.pranav-data.com/blog/feed.xml</id><title type="html">Pranav’s Data Hub</title><subtitle>Aspiring Data Professional and Lifelong Learner</subtitle><entry><title type="html">Rediscovering My Old RK61 Keyboard: Making it Mac and Code Compatible</title><link href="https://info.pranav-data.com/blog/2024/06/11/rk61-keyboard.html" rel="alternate" type="text/html" title="Rediscovering My Old RK61 Keyboard: Making it Mac and Code Compatible" /><published>2024-06-11T00:00:00+00:00</published><updated>2024-06-11T00:00:00+00:00</updated><id>https://info.pranav-data.com/blog/2024/06/11/rk61-keyboard</id><content type="html" xml:base="https://info.pranav-data.com/blog/2024/06/11/rk61-keyboard.html"><![CDATA[<p>Recently, I stumbled upon my old RK61 keyboard with red switches while cleaning out my desk. I remembered why I stopped using it after switching to a Mac: the layout wasn’t quite right for macOS, leading to several frustrating issues. Determined to make it work, I decided to give it another shot and solve the compatibility problems.</p>
+
+<h3 id="the-problems">The Problems</h3>
+
+<h4 id="forward-slash-button">Forward Slash Button</h4>
+<p>One of the biggest issues I faced was with the forward slash button. On the RK61, this button could only be pressed after changing the function layout by pressing <code class="language-plaintext highlighter-rouge">Fn</code> + <code class="language-plaintext highlighter-rouge">Enter</code>. This remapped the up arrow to a forward slash, but then I lost the functionality of the up arrow. This constant switching became a hassle, especially when coding or navigating through documents.</p>
+
+<h4 id="tilde-key">Tilde Key</h4>
+<p>Another challenge was typing the tilde (<code class="language-plaintext highlighter-rouge">~</code>) using the escape button. I couldn’t figure out the right key combination to make it work. This was particularly problematic when working with the terminal or writing Markdown files.</p>
+
+<h4 id="modifier-keys">Modifier Keys</h4>
+<p>On a Mac, the left-side modifier keys are arranged as follows:</p>
+
+<p>However, the RK61 recognized the command button as the option button, and vice versa. This mismatch made it difficult to use shortcuts efficiently, and my muscle memory from using the Mac keyboard wasn’t translating well to the RK61.</p>
+
+<h3 id="the-solution-karabiner-elements">The Solution: Karabiner-Elements</h3>
+
+<p>To address these issues, I turned to Karabiner-Elements, a powerful and flexible key remapping tool for macOS. Instead of configuring each key manually, I’ve created a custom rule that can be easily imported from the web. Here’s how you can set it up.</p>
+
+<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+
+<ol>
+  <li>
+    <p><strong>Download and Install Karabiner-Elements</strong>:
+First, download Karabiner-Elements from <a href="https://karabiner-elements.pqrs.org/">their official website</a>. Follow the installation instructions to get it set up on your Mac.</p>
+  </li>
+  <li>
+    <p><strong>Open Karabiner-Elements</strong>:
+Once installed, open Karabiner-Elements from your Applications folder.</p>
+  </li>
+  <li><strong>Import My Custom Rule</strong>:
+    <ul>
+      <li>Go to the <code class="language-plaintext highlighter-rouge">Complex Modifications</code> tab.</li>
+      <li>Click on <code class="language-plaintext highlighter-rouge">Add rule</code> and then <code class="language-plaintext highlighter-rouge">Import more rules from the Internet</code>.</li>
+      <li>Search for the custom rule I created for the RK61 keyboard. You can find it by searching for my username or the specific rule name.</li>
+      <li>Import the rule and enable it.</li>
+    </ul>
+  </li>
+  <li><strong>Test Your Configuration</strong>:
+    <ul>
+      <li>Open a text editor or terminal and test all the remapped keys.</li>
+      <li>Ensure the modifier keys behave as expected, and the forward slash and tilde keys are easily accessible.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="final-thoughts">Final Thoughts</h3>
+
+<p>After importing the custom rule in Karabiner-Elements, my RK61 keyboard is now fully functional with my Mac. The forward slash and tilde keys are easily accessible, and the modifier keys are correctly mapped. This setup allows me to code efficiently without worrying about key access or layout issues.</p>
+
+<p>If you have an RK61 or any other keyboard with similar compatibility issues, I highly recommend giving Karabiner-Elements a try and importing my custom rule. It’s a game-changer for customizing your keyboard to fit your needs on a Mac.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Recently, I stumbled upon my old RK61 keyboard with red switches while cleaning out my desk. I remembered why I stopped using it after switching to a Mac: the layout wasn’t quite right for macOS, leading to several frustrating issues. Determined to make it work, I decided to give it another shot and solve the compatibility problems.]]></summary></entry><entry><title type="html">Improving the library to classify MNIST dataset!</title><link href="https://info.pranav-data.com/blog/2024/06/09/improving-lib-mnist.html" rel="alternate" type="text/html" title="Improving the library to classify MNIST dataset!" /><published>2024-06-09T00:00:00+00:00</published><updated>2024-06-09T00:00:00+00:00</updated><id>https://info.pranav-data.com/blog/2024/06/09/improving-lib-mnist</id><content type="html" xml:base="https://info.pranav-data.com/blog/2024/06/09/improving-lib-mnist.html"><![CDATA[<h2 id="enhancing-my-neural-network-library-to-tackle-the-mnist-dataset">Enhancing My Neural Network Library to Tackle the MNIST Dataset</h2>
+
+<p>After building a foundational neural network library from scratch, I decided to put it to the test with a classic machine learning problem: the MNIST handwritten digit classification. This challenge not only validated the robustness of my library but also pushed me to make essential enhancements. Here’s a detailed account of my journey and the improvements I made to successfully classify handwritten digits.</p>
+
+<h3 id="setting-the-stage-the-mnist-dataset">Setting the Stage: The MNIST Dataset</h3>
+<p>The MNIST dataset is a benchmark in the world of machine learning, consisting of 60,000 training images and 10,000 testing images of handwritten digits from 0 to 9. Each image is a 28x28 pixel grayscale image, which needs to be classified into one of the 10 digit classes.</p>
+
+<h3 id="initial-steps-and-challenges">Initial Steps and Challenges</h3>
+<p>My initial setup included basic layers like <code class="language-plaintext highlighter-rouge">Linear</code> and <code class="language-plaintext highlighter-rouge">Tanh</code>, which were sufficient for simpler problems. However, the complexity of the MNIST dataset required more sophisticated components. Here are the key areas I focused on:</p>
+
+<ol>
+  <li><strong>Adding More Activation Functions:</strong>
+    <ul>
+      <li><strong>ReLU (Rectified Linear Unit):</strong> Popular for hidden layers due to its simplicity and effectiveness in mitigating the vanishing gradient problem.</li>
+      <li><strong>Softmax:</strong> Essential for the output layer in multi-class classification tasks as it converts logits to probabilities.</li>
+    </ul>
+  </li>
+  <li><strong>Improving Initialization:</strong>
+    <ul>
+      <li>Improved the weight initialization to ensure faster convergence by using He initialization.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="mathematical-explanation">Mathematical Explanation</h3>
+
+<h4 id="relu-rectified-linear-unit">ReLU (Rectified Linear Unit)</h4>
+<ul>
+  <li>
+    <p><strong>ReLU Function:</strong>
+\(\text{ReLU}(x) = \max(0, x)\)
+This activation function sets all negative values to zero and keeps positive values unchanged. It introduces non-linearity to the network and helps in mitigating the vanishing gradient problem.</p>
+  </li>
+  <li>
+    <p><strong>ReLU Derivative:</strong>
+\(\text{ReLU}'(x) = \begin{cases} 
+1 &amp; \text{if } x &gt; 0 \\
+0 &amp; \text{otherwise}
+\end{cases}\)
+This derivative is used during the backpropagation process to update the network’s weights.</p>
+  </li>
+</ul>
+
+<h4 id="softmax">Softmax</h4>
+<ul>
+  <li>
+    <p><strong>Softmax Function:</strong>
+\(\text{Softmax}(x_i) = \frac{\exp(x_i)}{\sum_{j} \exp(x_j)}\)
+This function converts logits into probabilities by exponentiating each logit and normalizing them by the sum of all exponentiated logits. This is particularly useful for multi-class classification problems.</p>
+  </li>
+  <li>
+    <p><strong>Softmax Derivative:</strong>
+\(\text{Softmax}'(x) = \text{Softmax}(x) \cdot (1 - \text{Softmax}(x))\)</p>
+
+    <p>The derivative is used in the backpropagation step to compute the gradients for the loss function with respect to the input logits.</p>
+  </li>
+</ul>
+
+<h3 id="updated-layers-implementation">Updated Layers Implementation</h3>
+<p>To incorporate these enhancements, I updated my <code class="language-plaintext highlighter-rouge">layers.py</code> file. Here’s a look at the new additions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+```python
+def relu(x: Tensor) -&gt; Tensor:
+    return np.maximum(0, x)
+
+def relu_prime(x: Tensor) -&gt; Tensor:
+    return (x &gt; 0).astype(float)
+
+class ReLU(Activation):
+    def __init__(self) -&gt; None:
+        super().__init__(relu, relu_prime)
+
+def softmax(x: Tensor) -&gt; Tensor:
+    exp_x = np.exp(x - np.max(x, axis=1, keepdims=True))
+    return exp_x / np.sum(exp_x, axis=1, keepdims=True)
+
+def softmax_prime(x: Tensor) -&gt; Tensor:
+    sm = softmax(x)
+    return sm * (1 - sm)
+
+class Softmax(Activation):
+    def __init__(self) -&gt; None:
+        super().__init__(softmax, softmax_prime)
+
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Enhancing My Neural Network Library to Tackle the MNIST Dataset]]></summary></entry><entry><title type="html">Cracking the XOR: Testing My Neural Network Library</title><link href="https://info.pranav-data.com/blog/2024/06/09/tackling-zor.html" rel="alternate" type="text/html" title="Cracking the XOR: Testing My Neural Network Library" /><published>2024-06-09T00:00:00+00:00</published><updated>2024-06-09T00:00:00+00:00</updated><id>https://info.pranav-data.com/blog/2024/06/09/tackling-zor</id><content type="html" xml:base="https://info.pranav-data.com/blog/2024/06/09/tackling-zor.html"><![CDATA[<p>One of the fundamental tests for any neural network implementation is the XOR problem. The XOR function is a classic example that demonstrates the limitations of simple linear models, as it cannot be learned with a single linear layer. By solving the XOR problem, I can validate the effectiveness of my neural network library and ensure that it can handle non-linear decision boundaries.</p>
+
+<h3 id="the-xor-problem">The XOR Problem</h3>
+
+<p>The XOR function takes two binary inputs and outputs a binary value according to the following truth table:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input   | Output
+--------|--------
+0   0   |  1   0
+1   0   |  0   1
+0   1   |  0   1
+1   1   |  1   0
+</code></pre></div></div>
+
+<p>This non-linear function cannot be solved by a single linear model, making it a perfect candidate to test the capabilities of a neural network.</p>
+
+<h3 id="setting-up-the-experiment">Setting Up the Experiment</h3>
+
+<p>To solve the XOR problem, I set up a neural network with the following architecture:</p>
+<ul>
+  <li><strong>Input Layer:</strong> 2 neurons (corresponding to the two inputs)</li>
+  <li><strong>Hidden Layer:</strong> 2 neurons with Tanh activation</li>
+  <li><strong>Output Layer:</strong> 2 neurons (corresponding to the two outputs)</li>
+</ul>
+
+<h3 id="code-implementation">Code Implementation</h3>
+
+<p>Here’s the code I used to train the neural network on the XOR problem:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">nnet.train</span> <span class="kn">import</span> <span class="n">train</span>
+<span class="kn">from</span> <span class="nn">nnet.nn</span> <span class="kn">import</span> <span class="n">NeuralNet</span>
+<span class="kn">from</span> <span class="nn">nnet.layers</span> <span class="kn">import</span> <span class="n">Linear</span><span class="p">,</span> <span class="n">Tanh</span>
+
+<span class="c1"># Define the inputs and corresponding targets
+</span><span class="n">inputs</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="n">targets</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="c1"># Initialize the neural network with a hidden layer and output layer
+</span><span class="n">net</span> <span class="o">=</span> <span class="n">NeuralNet</span><span class="p">([</span>
+    <span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">output_size</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+    <span class="n">Tanh</span><span class="p">(),</span>
+    <span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">output_size</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="c1"># Train the neural network on the XOR data
+</span><span class="n">train</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
+
+<span class="c1"># Test the trained network and print the results
+</span><span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">):</span>
+    <span class="n">predicted</span> <span class="o">=</span> <span class="n">net</span><span class="p">.</span><span class="n">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">predicted</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="results">Results</h3>
+
+<p>After training the neural network, I obtained the following output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0 0] [ 9.99999996e-01 -4.23385083e-09] [1 0]
+[1 0] [3.72591513e-09 1.00000000e+00] [0 1]
+[0 1] [6.66842143e-09 1.00000001e+00] [0 1]
+[1 1] [ 9.99999996e-01 -4.29201630e-09] [1 0]
+</code></pre></div></div>
+
+<h3 id="interpreting-the-results">Interpreting the Results</h3>
+
+<p>The predicted outputs are close to the expected targets:</p>
+
+<ul>
+  <li>For input <code class="language-plaintext highlighter-rouge">[0, 0]</code>, the predicted output is close to <code class="language-plaintext highlighter-rouge">[1, 0]</code>.</li>
+  <li>For input <code class="language-plaintext highlighter-rouge">[1, 0]</code>, the predicted output is close to <code class="language-plaintext highlighter-rouge">[0, 1]</code>.</li>
+  <li>For input <code class="language-plaintext highlighter-rouge">[0, 1]</code>, the predicted output is close to <code class="language-plaintext highlighter-rouge">[0, 1]</code>.</li>
+  <li>For input <code class="language-plaintext highlighter-rouge">[1, 1]</code>, the predicted output is close to <code class="language-plaintext highlighter-rouge">[1, 0]</code>.</li>
+</ul>
+
+<p>Although the predictions are not exact (due to the small discrepancies from numerical precision), they are sufficiently close to demonstrate that the neural network has successfully learned the XOR function. The near-zero values indicate high confidence in the predictions.</p>
+
+<h3 id="thoughts">Thoughts</h3>
+
+<p>Solving the XOR problem with my neural network library was a critical step in validating its functionality. The successful learning of the XOR function, a classic non-linear problem, indicates that this library can handle more complex tasks! This experiment solidified my understanding of neural networks and reinforced the robustness of my implementation.</p>
+
+<p>Next steps include further testing with more complex datasets and exploring additional features to enhance the library’s capabilities. Maybe MNNIST? Stay tuned for more updates as I continue to expand and refine my neural network library!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[One of the fundamental tests for any neural network implementation is the XOR problem. The XOR function is a classic example that demonstrates the limitations of simple linear models, as it cannot be learned with a single linear layer. By solving the XOR problem, I can validate the effectiveness of my neural network library and ensure that it can handle non-linear decision boundaries.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://info.pranav-data.com/blog/jekyll/update/2024/06/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-06-08T04:12:54+00:00</published><updated>2024-06-08T04:12:54+00:00</updated><id>https://info.pranav-data.com/blog/jekyll/update/2024/06/08/welcome-to-jekyll</id><content type="html" xml:base="https://info.pranav-data.com/blog/jekyll/update/2024/06/08/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+
+<span class="c1"># =&gt; prints 'Hi, Tom' to STDOUT</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Building a Neural Network Library in Python!</title><link href="https://info.pranav-data.com/blog/2024/06/08/deep-learning-library.html" rel="alternate" type="text/html" title="Building a Neural Network Library in Python!" /><published>2024-06-08T00:00:00+00:00</published><updated>2024-06-08T00:00:00+00:00</updated><id>https://info.pranav-data.com/blog/2024/06/08/deep-learning-library</id><content type="html" xml:base="https://info.pranav-data.com/blog/2024/06/08/deep-learning-library.html"><![CDATA[<h3 id="introduction">Introduction</h3>
+
+<p>As an aspiring data scientist with a keen interest in machine learning and neural networks, I embarked on an exciting journey to build my own neural network library in Python. This project not only deepened my understanding of neural networks but also sharpened my programming skills. In this blog, I’ll share my experience, the challenges I faced, and the insights I gained along the way.</p>
+
+<h3 id="the-beginning">The Beginning</h3>
+
+<p>The idea to build a neural network library came from my desire to understand the inner workings of popular libraries like TensorFlow and PyTorch. I wanted to go beyond using these libraries as black boxes and get my hands dirty with the fundamentals of neural network design and implementation.</p>
+
+<h3 id="setting-up-the-project">Setting Up the Project</h3>
+
+<p>I started by organizing my project files and setting up a basic directory structure. Here’s a glimpse of the project structure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deep_learning_lib/
+├── nnet/
+│   ├── __init__.py
+│   ├── data.py
+│   ├── layers.py
+│   ├── loss.py
+│   ├── nn.py
+│   ├── optim.py
+│   ├── tensor.py
+│   └── train.py
+└── xor.py
+</code></pre></div></div>
+
+<p>Each file in the <code class="language-plaintext highlighter-rouge">nnet</code> directory has a specific role, from defining the core neural network components to handling data loading and training processes. The <code class="language-plaintext highlighter-rouge">xor.py</code> file, located in the home folder <code class="language-plaintext highlighter-rouge">deep_learning_lib</code>, serves as a simple example to validate the functionality of the library.</p>
+
+<h3 id="key-components-of-the-library">Key Components of the Library</h3>
+
+<ol>
+  <li>
+    <p><strong>Tensor Operations (<code class="language-plaintext highlighter-rouge">tensor.py</code>)</strong>
+This file handles basic tensor operations, similar to what you would find in NumPy. It supports tensor creation, manipulation, and basic arithmetic operations.</p>
+  </li>
+  <li>
+    <p><strong>Layers (<code class="language-plaintext highlighter-rouge">layers.py</code>)</strong>
+This module defines various neural network layers such as fully connected (dense) layers, activation functions, and other essential components. Each layer is implemented as a class with methods for forward and backward propagation.</p>
+  </li>
+  <li>
+    <p><strong>Loss Functions (<code class="language-plaintext highlighter-rouge">loss.py</code>)</strong>
+The <code class="language-plaintext highlighter-rouge">loss.py</code> file includes implementations of common loss functions like Mean Squared Error (MSE) and Cross-Entropy Loss. These functions are crucial for training the network by providing a measure of how well the network is performing.</p>
+  </li>
+  <li>
+    <p><strong>Optimizers (<code class="language-plaintext highlighter-rouge">optim.py</code>)</strong>
+This module defines optimization algorithms such as Stochastic Gradient Descent (SGD). Optimizers update the weights of the network based on the computed gradients to minimize the loss.</p>
+  </li>
+  <li>
+    <p><strong>Training (<code class="language-plaintext highlighter-rouge">train.py</code>)</strong>
+The <code class="language-plaintext highlighter-rouge">train.py</code> file includes the training loop, which iterates over the dataset, performs forward and backward passes, and updates the network weights. It also handles data batching and shuffling.</p>
+  </li>
+  <li>
+    <p><strong>Example (<code class="language-plaintext highlighter-rouge">xor.py</code>)</strong>
+To test the library, I implemented a simple example of training a neural network to solve the XOR problem. This example helped me validate the correctness of the library and ensure that all components work together seamlessly.</p>
+  </li>
+</ol>
+
+<h3 id="challenges-and-learning-experiences">Challenges and Learning Experiences</h3>
+
+<h4 id="1-backpropagation">1. Backpropagation</h4>
+
+<p>Implementing backpropagation was one of the most challenging aspects of this project. Ensuring that gradients are correctly computed and propagated through the network required a deep understanding of calculus and matrix operations. Debugging gradient issues was particularly tricky, but it was a rewarding experience that solidified my understanding of neural networks.</p>
+
+<h4 id="2-modular-design">2. Modular Design</h4>
+
+<p>Designing the library in a modular way was essential for maintainability and scalability. By breaking down the network into discrete layers and components, I made the codebase easier to manage and extend. This modular approach also allowed me to test each component independently, making the debugging process more efficient.</p>
+
+<h4 id="3-performance-optimization">3. Performance Optimization</h4>
+
+<p>While my initial implementation was functional, it was not optimized for performance. I had to revisit several parts of the code to improve efficiency, such as minimizing redundant computations and optimizing memory usage. Profiling the code and identifying bottlenecks was an invaluable exercise in performance tuning.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Building a neural network library from scratch was an incredible learning experience. It not only deepened my understanding of machine learning and neural networks but also enhanced my programming skills and problem-solving abilities. This project reminded me of the importance of building things from the ground up to truly grasp their intricacies.</p>
+
+<p>I encourage anyone interested in machine learning to try building their own neural network library. The insights gained from such a project are invaluable and will undoubtedly make you a better data scientist and programmer. If you’re interested in the code, feel free to check out the project repository <a href="https://github.com/pranavsukumaran/nnet">here</a>.</p>
+
+<h3 id="whats-next">What’s Next?</h3>
+
+<p>With the core components in place, I’m excited to continue expanding this library. Future plans include adding support for convolutional layers, implementing additional optimization algorithms, and improving the overall performance and usability of the library.</p>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Cloud Computing</title><link href="https://info.pranav-data.com/blog/jekyll/update/2024/06/06/cloud-computing.html" rel="alternate" type="text/html" title="Cloud Computing" /><published>2024-06-06T00:00:00+00:00</published><updated>2024-06-06T00:00:00+00:00</updated><id>https://info.pranav-data.com/blog/jekyll/update/2024/06/06/cloud-computing</id><content type="html" xml:base="https://info.pranav-data.com/blog/jekyll/update/2024/06/06/cloud-computing.html"><![CDATA[<ul>
+  <li><a href="#cloud-computing">Cloud Computing</a>
+    <ul>
+      <li><a href="#what-is-cloud-computing">What is Cloud Computing?</a>
+        <ul>
+          <li><a href="#the-deployment-models-of-the-cloud">The Deployment Models of the Cloud</a></li>
+          <li><a href="#the-five-characteristics-of-cloud-computing">The Five Characteristics of Cloud Computing</a></li>
+          <li><a href="#six-advantages-of-cloud-computing">Six Advantages of Cloud Computing</a></li>
+          <li><a href="#problems-solved-by-the-cloud">Problems solved by the Cloud</a></li>
+          <li><a href="#types-of-cloud-computing">Types of Cloud Computing</a></li>
+          <li><a href="#example-of-cloud-computing-types">Example of Cloud Computing Types</a></li>
+          <li><a href="#pricing-of-the-cloud--quick-overview">Pricing of the Cloud – Quick Overview</a></li>
+          <li><a href="#aws-cloud-use-cases">AWS Cloud Use Cases</a></li>
+        </ul>
+      </li>
+      <li><a href="#aws-global-infrastructure">AWS Global Infrastructure</a>
+        <ul>
+          <li><a href="#aws-regions">AWS Regions</a></li>
+          <li><a href="#how-to-choose-an-aws-region">How to choose an AWS Region?</a></li>
+          <li><a href="#aws-availability-zones">AWS Availability Zones</a></li>
+          <li><a href="#aws-points-of-presence-edge-locations">AWS Points of Presence (Edge Locations)</a></li>
+        </ul>
+      </li>
+      <li><a href="#tour-of-the-aws-console">Tour of the AWS Console</a></li>
+      <li><a href="#shared-responsibility-model">Shared Responsibility Model</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="what-is-cloud-computing">What is Cloud Computing?</h2>
+
+<ul>
+  <li>Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources</li>
+  <li>Through a cloud services platform with pay-as-you-go pricing</li>
+  <li>You can provision exactly the right type and size of computing resources you need</li>
+  <li>You can access as many resources as you need, almost instantly</li>
+  <li>Simple way to access servers, storage, databases and a set of application services</li>
+  <li>Amazon Web Services owns and maintains the network-connected hardware required for these application services, while you provision and use what you need via a web application.</li>
+</ul>
+
+<h3 id="the-deployment-models-of-the-cloud">The Deployment Models of the Cloud</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Private Cloud:</strong></th>
+      <th><strong>Public Cloud:</strong></th>
+      <th><strong>Hybrid Cloud:</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cloud services used by a single organization, not exposed to the public.</td>
+      <td>Cloud resources owned and operated by a thirdparty cloud service provider delivered over the Internet.</td>
+      <td>Keep some servers on premises and extend some capabilities to the Cloud</td>
+    </tr>
+    <tr>
+      <td>Complete control</td>
+      <td>Six Advantages of Cloud Computing</td>
+      <td>Control over sensitive assets in your private infrastructure</td>
+    </tr>
+    <tr>
+      <td>Security for sensitive applications</td>
+      <td> </td>
+      <td>Flexibility and costeffectiveness of the public cloud</td>
+    </tr>
+    <tr>
+      <td>Meet specific business needs</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="the-five-characteristics-of-cloud-computing">The Five Characteristics of Cloud Computing</h3>
+
+<ul>
+  <li><strong>On-demand self service:</strong>
+    <ul>
+      <li>Users can provision resources and use them without human interaction from the service provider</li>
+    </ul>
+  </li>
+  <li><strong>Broad network access:</strong>
+    <ul>
+      <li>Resources available over the network, and can be accessed by diverse client platforms</li>
+    </ul>
+  </li>
+  <li><strong>Multi-tenancy and resource pooling:</strong>
+    <ul>
+      <li>Multiple customers can share the same infrastructure and applications with security and privacy</li>
+      <li>Multiple customers are serviced from the same physical resources</li>
+    </ul>
+  </li>
+  <li><strong>Rapid elasticity and scalability:</strong>
+    <ul>
+      <li>Automatically and quickly acquire and dispose resources when needed</li>
+      <li>Quickly and easily scale based on demand</li>
+    </ul>
+  </li>
+  <li><strong>Measured service:</strong>
+    <ul>
+      <li>Usage is measured, users pay correctly for what they have used</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="six-advantages-of-cloud-computing">Six Advantages of Cloud Computing</h3>
+
+<ul>
+  <li><strong>Trade capital expense (CAPEX) for operational expense (OPEX)</strong>
+    <ul>
+      <li>Pay On-Demand: don’t own hardware</li>
+      <li>Reduced Total Cost of Ownership (TCO) &amp; Operational Expense (OPEX)</li>
+    </ul>
+  </li>
+  <li><strong>Benefit from massive economies of scale</strong>
+    <ul>
+      <li>Prices are reduced as AWS is more efficient due to large scale</li>
+    </ul>
+  </li>
+  <li><strong>Stop guessing capacity</strong>
+    <ul>
+      <li>Scale based on actual measured usage</li>
+    </ul>
+  </li>
+  <li><strong>Increase speed and agility</strong></li>
+  <li><strong>Stop spending money running and maintaining data centers</strong></li>
+  <li><strong>Go global in minutes:</strong> leverage the AWS global infrastructure</li>
+</ul>
+
+<h3 id="problems-solved-by-the-cloud">Problems solved by the Cloud</h3>
+
+<ul>
+  <li><strong>Flexibility:</strong> change resource types when needed</li>
+  <li><strong>Cost-Effectiveness:</strong> pay as you go, for what you use</li>
+  <li><strong>Scalability:</strong> accommodate larger loads by making hardware stronger or adding additional nodes</li>
+  <li><strong>Elasticity:</strong> ability to scale out and scale-in when needed</li>
+  <li><strong>High-availability and fault-tolerance:</strong> build across data centers</li>
+  <li><strong>Agility:</strong> rapidly develop, test and launch software applications</li>
+</ul>
+
+<h3 id="types-of-cloud-computing">Types of Cloud Computing</h3>
+
+<ul>
+  <li><strong>Infrastructure as a Service (IaaS)</strong>
+    <ul>
+      <li>Provide building blocks for cloud IT</li>
+      <li>Provides networking, computers, data storage space</li>
+      <li>Highest level of flexibility</li>
+      <li>Easy parallel with traditional on-premises IT</li>
+    </ul>
+  </li>
+  <li><strong>Platform as a Service (PaaS)</strong>
+    <ul>
+      <li>Removes the need for your organization to manage the underlying infrastructure</li>
+      <li>Focus on the deployment and management of your applications</li>
+    </ul>
+  </li>
+  <li><strong>Software as a Service (SaaS)</strong>
+    <ul>
+      <li>Completed product that is run and managed by the service provider</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../images/cloud_models.jpg" alt="Cloud Models" /></p>
+
+<h3 id="example-of-cloud-computing-types">Example of Cloud Computing Types</h3>
+
+<ul>
+  <li><strong>Infrastructure as a Service:</strong>
+    <ul>
+      <li>Amazon EC2 (on AWS)</li>
+      <li>GCP, Azure, Rackspace, Digital Ocean, Linode</li>
+    </ul>
+  </li>
+  <li>Platform as a Service:
+    <ul>
+      <li>Elastic Beanstalk (on AWS)</li>
+      <li>Heroku, Google App Engine (GCP), Windows Azure (Microsoft)</li>
+    </ul>
+  </li>
+  <li>Software as a Service:
+    <ul>
+      <li>Many AWS services (ex: Rekognition for Machine Learning)</li>
+      <li>Google Apps (Gmail), Dropbox, Zoom</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="pricing-of-the-cloud--quick-overview">Pricing of the Cloud – Quick Overview</h3>
+
+<ul>
+  <li>AWS has 3 pricing fundamentals, following the pay-as-you-go pricing model</li>
+  <li><strong>Compute:</strong>
+    <ul>
+      <li>Pay for compute time</li>
+    </ul>
+  </li>
+  <li><strong>Storage:</strong>
+    <ul>
+      <li>Pay for data stored in the Cloud</li>
+    </ul>
+  </li>
+  <li><strong>Data transfer OUT of the Cloud:</strong>
+    <ul>
+      <li>Data transfer IN is free</li>
+    </ul>
+  </li>
+  <li>Solves the expensive issue of traditional IT</li>
+</ul>
+
+<h3 id="aws-cloud-use-cases">AWS Cloud Use Cases</h3>
+
+<ul>
+  <li>AWS enables you to build sophisticated, scalable applications</li>
+  <li>Applicable to a diverse set of industries</li>
+  <li>Use cases include
+    <ul>
+      <li>Enterprise IT, Backup &amp; Storage, Big Data analytics</li>
+      <li>Website hosting, Mobile &amp; Social Apps</li>
+      <li>Gaming</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="aws-global-infrastructure">AWS Global Infrastructure</h2>
+
+<ul>
+  <li>AWS Regions</li>
+  <li>AWS Availability Zones</li>
+  <li>AWS Data Centers</li>
+  <li>AWS Edge Locations / Points of Presence</li>
+  <li><a href="https://infrastructure.aws/">https://infrastructure.aws/</a></li>
+</ul>
+
+<h3 id="aws-regions">AWS Regions</h3>
+
+<ul>
+  <li>AWS has Regions all around the world</li>
+  <li>Names can be us-east-1, eu-west-3…</li>
+  <li>A region is a <strong>cluster of data centers</strong></li>
+  <li><strong>Most AWS services are region-scoped</strong></li>
+</ul>
+
+<h3 id="how-to-choose-an-aws-region">How to choose an AWS Region?</h3>
+
+<p>If you need to launch a new application, where should you do it?</p>
+
+<ul>
+  <li><strong>Compliance with data governance and legal requirements:</strong> data never leaves a region without your explicit permission</li>
+  <li><strong>Proximity to customers:</strong> reduced latency</li>
+  <li><strong>Available services within a Region:</strong> new services and new features aren’t available in every Region</li>
+  <li><strong>Pricing:</strong> pricing varies region to region and is transparent in the service pricing page</li>
+</ul>
+
+<h3 id="aws-availability-zones">AWS Availability Zones</h3>
+
+<ul>
+  <li>Each region has many availability zones (usually 3, min is 2, max is 6). Example:
+    <ul>
+      <li>ap-southeast-2a</li>
+      <li>ap-southeast-2b</li>
+      <li>ap-southeast-2c</li>
+    </ul>
+  </li>
+  <li>Each availability zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity</li>
+  <li>They’re separate from each other, so that they’re isolated from disasters</li>
+  <li>They’re connected with high bandwidth, ultra-low latency networking</li>
+</ul>
+
+<h3 id="aws-points-of-presence-edge-locations">AWS Points of Presence (Edge Locations)</h3>
+
+<ul>
+  <li>Amazon has 216 Points of Presence (205 Edge Locations &amp; 11 Regional Caches) in 84 cities across 42 countries</li>
+  <li>Content is delivered to end users with lower latency</li>
+</ul>
+
+<h2 id="tour-of-the-aws-console">Tour of the AWS Console</h2>
+
+<ul>
+  <li><strong>AWS has Global Services:</strong>
+    <ul>
+      <li>Identity and Access Management (IAM)</li>
+      <li>Route 53 (DNS service)</li>
+      <li>CloudFront (Content Delivery Network)</li>
+      <li>WAF (Web Application Firewall)</li>
+    </ul>
+  </li>
+  <li><strong>Most AWS services are Region-scoped:</strong>
+    <ul>
+      <li>Amazon EC2 (Infrastructure as a Service)</li>
+      <li>Elastic Beanstalk (Platform as a Service)</li>
+      <li>Lambda (Function as a Service)</li>
+      <li>Rekognition (Software as a Service)</li>
+    </ul>
+  </li>
+  <li><strong>Region Table:</strong> <a href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services">https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services</a></li>
+</ul>
+
+<h2 id="shared-responsibility-model">Shared Responsibility Model</h2>
+
+<ul>
+  <li>CUSTOMER = RESPONSIBILITY FOR THE SECURITY <strong>IN</strong> THE CLOUD</li>
+  <li>AWS = RESPONSIBILITY FOR THE SECURITY <strong>OF</strong> THE CLOUD</li>
+</ul>
+
+<p><img src="../images/Shared_Responsibility_Model.jpg" alt="Shared Responsibility Model" /></p>
+
+<hr />]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cloud Computing What is Cloud Computing? The Deployment Models of the Cloud The Five Characteristics of Cloud Computing Six Advantages of Cloud Computing Problems solved by the Cloud Types of Cloud Computing Example of Cloud Computing Types Pricing of the Cloud – Quick Overview AWS Cloud Use Cases AWS Global Infrastructure AWS Regions How to choose an AWS Region? AWS Availability Zones AWS Points of Presence (Edge Locations) Tour of the AWS Console Shared Responsibility Model]]></summary></entry><entry><title type="html">Setting up jekyll blog</title><link href="https://info.pranav-data.com/blog/jekyll/update/2024/06/05/setting-up-jekyll-blog.html" rel="alternate" type="text/html" title="Setting up jekyll blog" /><published>2024-06-05T00:00:00+00:00</published><updated>2024-06-05T00:00:00+00:00</updated><id>https://info.pranav-data.com/blog/jekyll/update/2024/06/05/setting-up-jekyll-blog</id><content type="html" xml:base="https://info.pranav-data.com/blog/jekyll/update/2024/06/05/setting-up-jekyll-blog.html"><![CDATA[<p>Guide to create a blog using GitHub Pages and Jekyll:</p>
+
+<h3 id="step-by-step-guide-to-create-a-blog-using-github-pages-and-jekyll">Step-by-Step Guide to Create a Blog Using GitHub Pages and Jekyll</h3>
+
+<h4 id="1-set-up-a-github-repository">1. <strong>Set Up a GitHub Repository</strong></h4>
+
+<ol>
+  <li>Go to <a href="https://github.com">GitHub</a> and log in to your account.</li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">+</code> icon in the top-right corner and select <code class="language-plaintext highlighter-rouge">New repository</code>.</li>
+  <li>Name your repository, for example, <code class="language-plaintext highlighter-rouge">username.github.io</code>, where <code class="language-plaintext highlighter-rouge">username</code> is your GitHub username.</li>
+  <li>Set the repository to public and check the box to initialize it with a <code class="language-plaintext highlighter-rouge">README.md</code> file.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Create repository</code>.</li>
+</ol>
+
+<h4 id="2-install-jekyll">2. <strong>Install Jekyll</strong></h4>
+
+<ol>
+  <li><strong>Install Ruby:</strong>
+    <ul>
+      <li>Follow the instructions on <a href="https://www.ruby-lang.org/en/documentation/installation/">ruby-lang.org</a> to install Ruby on your system.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Install Jekyll and Bundler:</strong>
+Open your terminal and run the following commands:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="3-create-a-new-jekyll-site">3. <strong>Create a New Jekyll Site</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Navigate to your workspace:</strong>
+Open your terminal and navigate to the directory where you want to create your blog.</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>path/to/your/workspace
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Create a new Jekyll site:</strong>
+Run the following command to create a new Jekyll site in a directory named <code class="language-plaintext highlighter-rouge">myblog</code>:</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new myblog
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Navigate to your new Jekyll site directory:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>myblog
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="4-run-your-jekyll-site-locally">4. <strong>Run Your Jekyll Site Locally</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Install dependencies:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Serve your site locally:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Open your browser:</strong>
+Open your browser and go to <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> to see your site.</p>
+  </li>
+</ol>
+
+<h4 id="5-configure-your-jekyll-site">5. <strong>Configure Your Jekyll Site</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Open <code class="language-plaintext highlighter-rouge">_config.yml</code>:</strong>
+Edit the <code class="language-plaintext highlighter-rouge">_config.yml</code> file to customize your site’s settings.</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">My Blog</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">A blog about something awesome</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://username.github.io"</span> <span class="c1"># the base hostname &amp; protocol for your site</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Update <code class="language-plaintext highlighter-rouge">_config.yml</code> with your repository details:</strong>
+Make sure the URL and baseurl are correctly set to point to your GitHub Pages site.</p>
+  </li>
+</ol>
+
+<h4 id="6-add-content-to-your-blog">6. <strong>Add Content to Your Blog</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Create a new post:</strong>
+Add a new Markdown file to the <code class="language-plaintext highlighter-rouge">_posts</code> directory. Name the file using the format <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>.</p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Welcome</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">My</span><span class="nv"> </span><span class="s">Blog"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2024-06-08 12:00:00 -0000</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">jekyll update</span>
+<span class="nn">---</span>
+This is my first blog post!
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Commit your changes:</strong>
+Save the file and commit your changes to your local Git repository.</p>
+  </li>
+</ol>
+
+<h4 id="7-push-your-site-to-github">7. <strong>Push Your Site to GitHub</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Add your GitHub repository as a remote:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/username/username.github.io.git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Push your site to GitHub:</strong></p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit"</span>
+git push <span class="nt">-u</span> origin master
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h4 id="8-configure-github-pages">8. <strong>Configure GitHub Pages</strong></h4>
+
+<ol>
+  <li>
+    <p><strong>Go to your GitHub repository:</strong>
+Navigate to the <code class="language-plaintext highlighter-rouge">username.github.io</code> repository on GitHub.</p>
+  </li>
+  <li><strong>Set up GitHub Pages:</strong>
+    <ul>
+      <li>Go to the repository settings.</li>
+      <li>Scroll down to the “GitHub Pages” section.</li>
+      <li>Select the source as <code class="language-plaintext highlighter-rouge">master branch</code> or <code class="language-plaintext highlighter-rouge">main branch</code> (depending on your default branch).</li>
+      <li>Save your changes.</li>
+    </ul>
+  </li>
+  <li><strong>Access your site:</strong>
+Your blog should now be live at <code class="language-plaintext highlighter-rouge">https://username.github.io</code>.</li>
+</ol>
+
+<h3 id="additional-tips">Additional Tips</h3>
+
+<ul>
+  <li><strong>Themes:</strong> You can change the theme of your Jekyll site by modifying the <code class="language-plaintext highlighter-rouge">_config.yml</code> file. You can find available themes at <a href="https://jekyllthemes.io/">Jekyll Themes</a>.</li>
+  <li><strong>Plugins:</strong> Jekyll supports various plugins to extend its functionality. You can add plugins by updating your <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</li>
+</ul>
+
+<p>By following these steps, you should have a basic Jekyll blog hosted on GitHub Pages. You can continue to customize your blog by editing the HTML, CSS, and adding more posts</p>
+
+<p>y following these steps, you should have a basic Jekyll blog hosted on GitHub Pages. You can continue to customize your blog by editing the HTML, CSS, and adding more posts</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Guide to create a blog using GitHub Pages and Jekyll:]]></summary></entry></feed>

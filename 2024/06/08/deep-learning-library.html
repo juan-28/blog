@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Building a Neural Network Library in Python! | Pranav’s Data Hub</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Building a Neural Network Library in Python!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction" />
+<meta property="og:description" content="Introduction" />
+<link rel="canonical" href="https://info.pranav-data.com/blog/2024/06/08/deep-learning-library.html" />
+<meta property="og:url" content="https://info.pranav-data.com/blog/2024/06/08/deep-learning-library.html" />
+<meta property="og:site_name" content="Pranav’s Data Hub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-06-08T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Building a Neural Network Library in Python!" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-06-08T00:00:00+00:00","datePublished":"2024-06-08T00:00:00+00:00","description":"Introduction","headline":"Building a Neural Network Library in Python!","mainEntityOfPage":{"@type":"WebPage","@id":"https://info.pranav-data.com/blog/2024/06/08/deep-learning-library.html"},"url":"https://info.pranav-data.com/blog/2024/06/08/deep-learning-library.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://info.pranav-data.com/blog/feed.xml" title="Pranav&apos;s Data Hub" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Pranav&#39;s Data Hub</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Building a Neural Network Library in Python!</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-06-08T00:00:00+00:00" itemprop="datePublished">Jun 8, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="introduction">Introduction</h3>
+
+<p>As an aspiring data scientist with a keen interest in machine learning and neural networks, I embarked on an exciting journey to build my own neural network library in Python. This project not only deepened my understanding of neural networks but also sharpened my programming skills. In this blog, I’ll share my experience, the challenges I faced, and the insights I gained along the way.</p>
+
+<h3 id="the-beginning">The Beginning</h3>
+
+<p>The idea to build a neural network library came from my desire to understand the inner workings of popular libraries like TensorFlow and PyTorch. I wanted to go beyond using these libraries as black boxes and get my hands dirty with the fundamentals of neural network design and implementation.</p>
+
+<h3 id="setting-up-the-project">Setting Up the Project</h3>
+
+<p>I started by organizing my project files and setting up a basic directory structure. Here’s a glimpse of the project structure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deep_learning_lib/
+├── nnet/
+│   ├── __init__.py
+│   ├── data.py
+│   ├── layers.py
+│   ├── loss.py
+│   ├── nn.py
+│   ├── optim.py
+│   ├── tensor.py
+│   └── train.py
+└── xor.py
+</code></pre></div></div>
+
+<p>Each file in the <code class="language-plaintext highlighter-rouge">nnet</code> directory has a specific role, from defining the core neural network components to handling data loading and training processes. The <code class="language-plaintext highlighter-rouge">xor.py</code> file, located in the home folder <code class="language-plaintext highlighter-rouge">deep_learning_lib</code>, serves as a simple example to validate the functionality of the library.</p>
+
+<h3 id="key-components-of-the-library">Key Components of the Library</h3>
+
+<ol>
+  <li>
+    <p><strong>Tensor Operations (<code class="language-plaintext highlighter-rouge">tensor.py</code>)</strong>
+This file handles basic tensor operations, similar to what you would find in NumPy. It supports tensor creation, manipulation, and basic arithmetic operations.</p>
+  </li>
+  <li>
+    <p><strong>Layers (<code class="language-plaintext highlighter-rouge">layers.py</code>)</strong>
+This module defines various neural network layers such as fully connected (dense) layers, activation functions, and other essential components. Each layer is implemented as a class with methods for forward and backward propagation.</p>
+  </li>
+  <li>
+    <p><strong>Loss Functions (<code class="language-plaintext highlighter-rouge">loss.py</code>)</strong>
+The <code class="language-plaintext highlighter-rouge">loss.py</code> file includes implementations of common loss functions like Mean Squared Error (MSE) and Cross-Entropy Loss. These functions are crucial for training the network by providing a measure of how well the network is performing.</p>
+  </li>
+  <li>
+    <p><strong>Optimizers (<code class="language-plaintext highlighter-rouge">optim.py</code>)</strong>
+This module defines optimization algorithms such as Stochastic Gradient Descent (SGD). Optimizers update the weights of the network based on the computed gradients to minimize the loss.</p>
+  </li>
+  <li>
+    <p><strong>Training (<code class="language-plaintext highlighter-rouge">train.py</code>)</strong>
+The <code class="language-plaintext highlighter-rouge">train.py</code> file includes the training loop, which iterates over the dataset, performs forward and backward passes, and updates the network weights. It also handles data batching and shuffling.</p>
+  </li>
+  <li>
+    <p><strong>Example (<code class="language-plaintext highlighter-rouge">xor.py</code>)</strong>
+To test the library, I implemented a simple example of training a neural network to solve the XOR problem. This example helped me validate the correctness of the library and ensure that all components work together seamlessly.</p>
+  </li>
+</ol>
+
+<h3 id="challenges-and-learning-experiences">Challenges and Learning Experiences</h3>
+
+<h4 id="1-backpropagation">1. Backpropagation</h4>
+
+<p>Implementing backpropagation was one of the most challenging aspects of this project. Ensuring that gradients are correctly computed and propagated through the network required a deep understanding of calculus and matrix operations. Debugging gradient issues was particularly tricky, but it was a rewarding experience that solidified my understanding of neural networks.</p>
+
+<h4 id="2-modular-design">2. Modular Design</h4>
+
+<p>Designing the library in a modular way was essential for maintainability and scalability. By breaking down the network into discrete layers and components, I made the codebase easier to manage and extend. This modular approach also allowed me to test each component independently, making the debugging process more efficient.</p>
+
+<h4 id="3-performance-optimization">3. Performance Optimization</h4>
+
+<p>While my initial implementation was functional, it was not optimized for performance. I had to revisit several parts of the code to improve efficiency, such as minimizing redundant computations and optimizing memory usage. Profiling the code and identifying bottlenecks was an invaluable exercise in performance tuning.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Building a neural network library from scratch was an incredible learning experience. It not only deepened my understanding of machine learning and neural networks but also enhanced my programming skills and problem-solving abilities. This project reminded me of the importance of building things from the ground up to truly grasp their intricacies.</p>
+
+<p>I encourage anyone interested in machine learning to try building their own neural network library. The insights gained from such a project are invaluable and will undoubtedly make you a better data scientist and programmer. If you’re interested in the code, feel free to check out the project repository <a href="https://github.com/pranavsukumaran/nnet">here</a>.</p>
+
+<h3 id="whats-next">What’s Next?</h3>
+
+<p>With the core components in place, I’m excited to continue expanding this library. Future plans include adding support for convolutional layers, implementing additional optimization algorithms, and improving the overall performance and usability of the library.</p>
+
+<hr />
+
+
+  </div><a class="u-url" href="/blog/2024/06/08/deep-learning-library.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Pranav&#39;s Data Hub</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Pranav&#39;s Data Hub</li><li><a class="u-email" href="mailto:pranavsukumaran6@gmail.com">pranavsukumaran6@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/juan-28"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">juan-28</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Aspiring Data Professional and Lifelong Learner</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
