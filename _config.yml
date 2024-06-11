@@ -23,7 +23,7 @@ email: pranavsukumaran6@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Aspiring Data Professional and Lifelong Learner
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://info.pranav-data.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://juan-28.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: juan-28
 
 markdown: kramdown
