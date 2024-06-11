@@ -26,12 +26,16 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://info.pranav-data.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: juan-28
 
+markdown: kramdown
+kramdown:
+  input: GFM
 # Build settings
 theme: minima
 minima:
   skin: dark
 plugins:
   - jekyll-feed
+
 
 
 # Exclude from processing.

@@ -21,7 +21,7 @@ end
 gem 'webrick'
 gem 'faraday-retry'
 gem 'csv'
-
+gem 'kramdown-parser-gfm'
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
