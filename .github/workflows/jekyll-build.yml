@@ -15,8 +15,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '20.x' # Ensure using Node.js 20 if supported
+          node-version: '20.x'
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
