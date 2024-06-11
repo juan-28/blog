@@ -2,6 +2,7 @@
 layout: post
 title: "Cracking the XOR: Testing My Neural Network Library"
 date: 2024-06-09
+id:
 ---
 One of the fundamental tests for any neural network implementation is the XOR problem. The XOR function is a classic example that demonstrates the limitations of simple linear models, as it cannot be learned with a single linear layer. By solving the XOR problem, I can validate the effectiveness of my neural network library and ensure that it can handle non-linear decision boundaries.
 

@@ -1,4 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-06-09T18:32:43-04:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Pranav’s Data Hub</title><subtitle>Aspiring Data Professional and Lifelong Learner</subtitle><entry><title type="html">Cracking the XOR: Testing My Neural Network Library</title><link href="http://localhost:4000/blog/2024/06/09/tackling-zor.html" rel="alternate" type="text/html" title="Cracking the XOR: Testing My Neural Network Library" /><published>2024-06-09T00:00:00-04:00</published><updated>2024-06-09T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/06/09/tackling-zor</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/09/tackling-zor.html"><![CDATA[<p>One of the fundamental tests for any neural network implementation is the XOR problem. The XOR function is a classic example that demonstrates the limitations of simple linear models, as it cannot be learned with a single linear layer. By solving the XOR problem, I can validate the effectiveness of my neural network library and ensure that it can handle non-linear decision boundaries.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-06-11T03:19:33-04:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Pranav’s Data Hub</title><subtitle>Aspiring Data Professional and Lifelong Learner</subtitle><entry><title type="html">Rediscovering My Old RK61 Keyboard: Making it Mac and Code Compatible</title><link href="http://localhost:4000/blog/2024/06/11/rk61-keyboard.html" rel="alternate" type="text/html" title="Rediscovering My Old RK61 Keyboard: Making it Mac and Code Compatible" /><published>2024-06-11T00:00:00-04:00</published><updated>2024-06-11T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/06/11/rk61-keyboard</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/11/rk61-keyboard.html"><![CDATA[<p>Recently, I stumbled upon my old RK61 keyboard with red switches while cleaning out my desk. I remembered why I stopped using it after switching to a Mac: the layout wasn’t quite right for macOS, leading to several frustrating issues. Determined to make it work, I decided to give it another shot and solve the compatibility problems.</p>
+
+<h3 id="the-problems">The Problems</h3>
+
+<h4 id="forward-slash-button">Forward Slash Button</h4>
+<p>One of the biggest issues I faced was with the forward slash button. On the RK61, this button could only be pressed after changing the function layout by pressing <code class="language-plaintext highlighter-rouge">Fn</code> + <code class="language-plaintext highlighter-rouge">Enter</code>. This remapped the up arrow to a forward slash, but then I lost the functionality of the up arrow. This constant switching became a hassle, especially when coding or navigating through documents.</p>
+
+<h4 id="tilde-key">Tilde Key</h4>
+<p>Another challenge was typing the tilde (<code class="language-plaintext highlighter-rouge">~</code>) using the escape button. I couldn’t figure out the right key combination to make it work. This was particularly problematic when working with the terminal or writing Markdown files.</p>
+
+<h4 id="modifier-keys">Modifier Keys</h4>
+<p>On a Mac, the left-side modifier keys are arranged as follows:</p>
+
+<p>However, the RK61 recognized the command button as the option button, and vice versa. This mismatch made it difficult to use shortcuts efficiently, and my muscle memory from using the Mac keyboard wasn’t translating well to the RK61.</p>
+
+<h3 id="the-solution-karabiner-elements">The Solution: Karabiner-Elements</h3>
+
+<p>To address these issues, I turned to Karabiner-Elements, a powerful and flexible key remapping tool for macOS. Instead of configuring each key manually, I’ve created a custom rule that can be easily imported from the web. Here’s how you can set it up.</p>
+
+<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+
+<ol>
+  <li>
+    <p><strong>Download and Install Karabiner-Elements</strong>:
+First, download Karabiner-Elements from <a href="https://karabiner-elements.pqrs.org/">their official website</a>. Follow the installation instructions to get it set up on your Mac.</p>
+  </li>
+  <li>
+    <p><strong>Open Karabiner-Elements</strong>:
+Once installed, open Karabiner-Elements from your Applications folder.</p>
+  </li>
+  <li><strong>Import My Custom Rule</strong>:
+    <ul>
+      <li>Go to the <code class="language-plaintext highlighter-rouge">Complex Modifications</code> tab.</li>
+      <li>Click on <code class="language-plaintext highlighter-rouge">Add rule</code> and then <code class="language-plaintext highlighter-rouge">Import more rules from the Internet</code>.</li>
+      <li>Search for the custom rule I created for the RK61 keyboard. You can find it by searching for my username or the specific rule name.</li>
+      <li>Import the rule and enable it.</li>
+    </ul>
+  </li>
+  <li><strong>Test Your Configuration</strong>:
+    <ul>
+      <li>Open a text editor or terminal and test all the remapped keys.</li>
+      <li>Ensure the modifier keys behave as expected, and the forward slash and tilde keys are easily accessible.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="final-thoughts">Final Thoughts</h3>
+
+<p>After importing the custom rule in Karabiner-Elements, my RK61 keyboard is now fully functional with my Mac. The forward slash and tilde keys are easily accessible, and the modifier keys are correctly mapped. This setup allows me to code efficiently without worrying about key access or layout issues.</p>
+
+<p>If you have an RK61 or any other keyboard with similar compatibility issues, I highly recommend giving Karabiner-Elements a try and importing my custom rule. It’s a game-changer for customizing your keyboard to fit your needs on a Mac.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Recently, I stumbled upon my old RK61 keyboard with red switches while cleaning out my desk. I remembered why I stopped using it after switching to a Mac: the layout wasn’t quite right for macOS, leading to several frustrating issues. Determined to make it work, I decided to give it another shot and solve the compatibility problems.]]></summary></entry><entry><title type="html">Improving the library to classify MNIST dataset!</title><link href="http://localhost:4000/blog/2024/06/09/improving-lib-mnist.html" rel="alternate" type="text/html" title="Improving the library to classify MNIST dataset!" /><published>2024-06-09T00:00:00-04:00</published><updated>2024-06-09T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/06/09/improving-lib-mnist</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/09/improving-lib-mnist.html"><![CDATA[<h2 id="enhancing-my-neural-network-library-to-tackle-the-mnist-dataset">Enhancing My Neural Network Library to Tackle the MNIST Dataset</h2>
+
+<p>After building a foundational neural network library from scratch, I decided to put it to the test with a classic machine learning problem: the MNIST handwritten digit classification. This challenge not only validated the robustness of my library but also pushed me to make essential enhancements. Here’s a detailed account of my journey and the improvements I made to successfully classify handwritten digits.</p>
+
+<h3 id="setting-the-stage-the-mnist-dataset">Setting the Stage: The MNIST Dataset</h3>
+<p>The MNIST dataset is a benchmark in the world of machine learning, consisting of 60,000 training images and 10,000 testing images of handwritten digits from 0 to 9. Each image is a 28x28 pixel grayscale image, which needs to be classified into one of the 10 digit classes.</p>
+
+<h3 id="initial-steps-and-challenges">Initial Steps and Challenges</h3>
+<p>My initial setup included basic layers like <code class="language-plaintext highlighter-rouge">Linear</code> and <code class="language-plaintext highlighter-rouge">Tanh</code>, which were sufficient for simpler problems. However, the complexity of the MNIST dataset required more sophisticated components. Here are the key areas I focused on:</p>
+
+<ol>
+  <li><strong>Adding More Activation Functions:</strong>
+    <ul>
+      <li><strong>ReLU (Rectified Linear Unit):</strong> Popular for hidden layers due to its simplicity and effectiveness in mitigating the vanishing gradient problem.</li>
+      <li><strong>Softmax:</strong> Essential for the output layer in multi-class classification tasks as it converts logits to probabilities.</li>
+    </ul>
+  </li>
+  <li><strong>Improving Initialization:</strong>
+    <ul>
+      <li>Improved the weight initialization to ensure faster convergence by using He initialization.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="mathematical-explanation">Mathematical Explanation</h3>
+
+<h4 id="relu-rectified-linear-unit">ReLU (Rectified Linear Unit)</h4>
+<ul>
+  <li>
+    <p><strong>ReLU Function:</strong>
+\(\text{ReLU}(x) = \max(0, x)\)
+This activation function sets all negative values to zero and keeps positive values unchanged. It introduces non-linearity to the network and helps in mitigating the vanishing gradient problem.</p>
+  </li>
+  <li>
+    <p><strong>ReLU Derivative:</strong>
+\(\text{ReLU}'(x) = \begin{cases} 
+1 &amp; \text{if } x &gt; 0 \\
+0 &amp; \text{otherwise}
+\end{cases}\)
+This derivative is used during the backpropagation process to update the network’s weights.</p>
+  </li>
+</ul>
+
+<h4 id="softmax">Softmax</h4>
+<ul>
+  <li>
+    <p><strong>Softmax Function:</strong>
+\(\text{Softmax}(x_i) = \frac{\exp(x_i)}{\sum_{j} \exp(x_j)}\)
+This function converts logits into probabilities by exponentiating each logit and normalizing them by the sum of all exponentiated logits. This is particularly useful for multi-class classification problems.</p>
+  </li>
+  <li>
+    <p><strong>Softmax Derivative:</strong>
+\(\text{Softmax}'(x) = \text{Softmax}(x) \cdot (1 - \text{Softmax}(x))\)</p>
+
+    <p>The derivative is used in the backpropagation step to compute the gradients for the loss function with respect to the input logits.</p>
+  </li>
+</ul>
+
+<h3 id="updated-layers-implementation">Updated Layers Implementation</h3>
+<p>To incorporate these enhancements, I updated my <code class="language-plaintext highlighter-rouge">layers.py</code> file. Here’s a look at the new additions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+```python
+def relu(x: Tensor) -&gt; Tensor:
+    return np.maximum(0, x)
+
+def relu_prime(x: Tensor) -&gt; Tensor:
+    return (x &gt; 0).astype(float)
+
+class ReLU(Activation):
+    def __init__(self) -&gt; None:
+        super().__init__(relu, relu_prime)
+
+def softmax(x: Tensor) -&gt; Tensor:
+    exp_x = np.exp(x - np.max(x, axis=1, keepdims=True))
+    return exp_x / np.sum(exp_x, axis=1, keepdims=True)
+
+def softmax_prime(x: Tensor) -&gt; Tensor:
+    sm = softmax(x)
+    return sm * (1 - sm)
+
+class Softmax(Activation):
+    def __init__(self) -&gt; None:
+        super().__init__(softmax, softmax_prime)
+
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Enhancing My Neural Network Library to Tackle the MNIST Dataset]]></summary></entry><entry><title type="html">Cracking the XOR: Testing My Neural Network Library</title><link href="http://localhost:4000/blog/2024/06/09/tackling-zor.html" rel="alternate" type="text/html" title="Cracking the XOR: Testing My Neural Network Library" /><published>2024-06-09T00:00:00-04:00</published><updated>2024-06-09T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/06/09/tackling-zor</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/09/tackling-zor.html"><![CDATA[<p>One of the fundamental tests for any neural network implementation is the XOR problem. The XOR function is a classic example that demonstrates the limitations of simple linear models, as it cannot be learned with a single linear layer. By solving the XOR problem, I can validate the effectiveness of my neural network library and ensure that it can handle non-linear decision boundaries.</p>
 
 <h3 id="the-xor-problem">The XOR Problem</h3>
 
